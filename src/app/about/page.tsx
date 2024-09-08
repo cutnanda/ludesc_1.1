@@ -5,8 +5,7 @@ import NavSide from '../components/themebuilder/04-NavSide/01-NavSide';
 import ActiveMenu from '../components/themebuilder/04-NavSide/03-ActiveMenu';
 import BorderNav from '../components/themebuilder/04-NavSide/02-BorderNav';
 import NormalMenu from '../components/themebuilder/04-NavSide/04-NormalMenu';
-import Button from '../components/elements/Button';
-import { HiChevronRight, HiFolderOpen } from 'react-icons/hi';
+import { HiChevronRight } from 'react-icons/hi';
 
 export default function AboutPage() {
     return (
