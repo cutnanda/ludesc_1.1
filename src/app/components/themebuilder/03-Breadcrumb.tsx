@@ -3,7 +3,6 @@ import React from 'react';
 import { HiChevronRight } from 'react-icons/hi';
 
 interface BreadcrumbProps {
-    title: string;
     link: {
         name: string;
         href: string;
@@ -13,7 +12,7 @@ interface BreadcrumbProps {
     };
 }
 
-const Breadcrumb: React.FC<BreadcrumbProps> = ({ title, link, link2 }) => {
+const Breadcrumb: React.FC<BreadcrumbProps> = ({ link, link2 }) => {
     return (
         <div className='mb-6'>
             <div className="flex items-center pt-2 text-[14px] font-medium text-[#097785]">

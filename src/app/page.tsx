@@ -15,7 +15,6 @@ export default function HomePage() {
         <div className="flex flex-col md:flex-row justify-center items-start p-5 w-[95%] lg:w-[85%]">
           <div className="lg:hidden">
             <Breadcrumb
-              title="Dashboard"
               link={{ name: "Home", href: "/" }}
               link2={{ name: "Introducing LUDESC" }}
             />
