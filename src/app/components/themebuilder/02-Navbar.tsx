@@ -127,8 +127,8 @@ export default function NavbarMobile() {
                     />
                     <Button
                         icon={<HiFolderOpen size={15} className='fill-current w-4 h-4 mr-3' />}
-                        text="Table Siswa"
-                        href="/tablesiswa"
+                        text="About"
+                        href="/about"
                         className="mt-2 font-medium hover:bg-[#8ca7cc] hover:text-white"
                     />
                     <Button
