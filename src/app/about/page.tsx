@@ -23,13 +23,13 @@ export default function AboutPage() {
                         {/* <!-- Item 2 (Image) --> */}
                         <div className="w-full md:w-[50%] md:order-last flex justify-start items-center">
                             <div>
-                                <Image src="/images/HeroImage.png" alt="Hero Image" width={400} height={400} className='w-[200px] lg:w-full' />
+                                <Image src="/images/HeroImage.png" alt="Hero Image" width={400} height={400} className='w-[200px] lg:w-full ' />
                             </div>
                         </div>
                         {/* <!-- Item 1 (Text) --> */}
-                        <div className="w-full md:w-[50%] ">
+                        <div className="w-full md:w-[50%] lg:mt-0 mt-8 ">
                             <div>
-                                <h1 className="text-[#1C738E] text-[29px] lg:text-[46px] font-bold mb-[-5px]">AI-Powered</h1>
+                                <h1 className="text-[#1C738E] text-[30px] lg:text-[46px] font-bold mb-[-5px] ">AI-Powered</h1>
                                 <p className="text-[#1c8e72] text-[23px] lg:text-[38px] font-bold">Lung Disease Screening & Telemedicine</p>
                                 <p className="text-[#828383] text-[15px] font-300 mb-5 mt-2 leading-[1.6rem]">
                                     System to help patients and medical personnel in early screening for lung
