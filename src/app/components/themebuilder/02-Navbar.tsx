@@ -118,7 +118,7 @@ export default function NavbarMobile() {
             </div>
 
             {isClick && (
-                <div className="p-3 bg-[#f0f0f0] border-y border-[#dbdbdb]">
+                <div className="lg:hidden p-3 bg-[#f0f0f0] border-y border-[#dbdbdb]">
                     <Button
                         icon={<HiHome size={15} className='fill-current w-4 h-4 mr-3' />}
                         text="Dashboard"
