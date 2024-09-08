@@ -3,7 +3,7 @@
 import React, { useState } from "react";
 import Link from 'next/link';
 import Image from 'next/image';
-import { HiHome, HiOutlineUser, HiOutlinePlus, HiMenuAlt3, HiX, HiFolderOpen, HiOutlineShoppingCart } from 'react-icons/hi';
+import { HiHome, HiOutlineUser, HiMenuAlt3, HiX, HiFolderOpen, HiOutlineShoppingCart } from 'react-icons/hi';
 import Button from '../elements/Button';
 import MenuDesktopAktif from './1-MenuDekstop/01-MenuAktif';
 import MenuDesktopNonAktif from './1-MenuDekstop/02-MenuNonAktif';
