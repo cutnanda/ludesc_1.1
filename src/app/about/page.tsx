@@ -1,5 +1,12 @@
 import Image from 'next/image';
 import React from 'react';
+import Breadcrumb from '../components/themebuilder/03-Breadcrumb';
+import NavSide from '../components/themebuilder/04-NavSide/01-NavSide';
+import ActiveMenu from '../components/themebuilder/04-NavSide/03-ActiveMenu';
+import BorderNav from '../components/themebuilder/04-NavSide/02-BorderNav';
+import NormalMenu from '../components/themebuilder/04-NavSide/04-NormalMenu';
+import Button from '../components/elements/Button';
+import { HiChevronRight, HiFolderOpen } from 'react-icons/hi';
 
 export default function AboutPage() {
     return (
@@ -7,11 +14,18 @@ export default function AboutPage() {
             {/* <!-- Content --> */}
             <div className="w-full flex justify-center items-center">
                 <div className="flex flex-col md:flex-row justify-center items-start p-5 w-[95%] lg:w-[85%]">
+                    <div className="lg:hidden">
+                        <Breadcrumb
+                            title="Dashboard"
+                            link={{ name: "Home", href: "/" }}
+                            link2={{ name: "Introducing LUDESC" }}
+                        />
+                    </div>
                     <div className="md:w-4/5 w-full flex flex-col md:flex-row justify-center items-start  ">
                         {/* <!-- Item 2 (Image) --> */}
                         <div className="w-full md:w-[50%] md:order-last">
                             <div>
-                                <Image src="/HeroImage.jpg" alt="Hero Image" width={400} height={300} />
+                                <Image src="/images/HeroImage.png" alt="Hero Image" width={400} height={300} />
                             </div>
                         </div>
                         {/* <!-- Item 1 (Text) --> */}
@@ -38,30 +52,17 @@ export default function AboutPage() {
                         </div>
                     </div>
                     {/* <!-- NavSidebar --> */}
-                    <div className="w-full md:w-1/5 flex flex-col justify-start items-start space-y-4 mt-8 md:mt-0 ml-0 md:ml-10  ">
-                        <div className="flex items-center gap-4">
-                            <p className='text-[13px] font-medium text-[#999999]'>01</p>
-                            <a href="" className="text-[16px] font-semibold">Introducing LUDESC</a>
+                    <NavSide>
+                        <div className="w-full flex justify-strat items-center  text-[#1c738e]">
+                        <p className='text-[14px] font-semibold mr-2'>Home</p>
+                        <HiChevronRight size={15} className='fill-current w-4 h-4 ' />
                         </div>
-                        <div className="flex items-center border-l-2 border-gray-300 pl-4 py-10 my-2">
-                        </div>
-                        <div className="flex items-center gap-4">
-                            <p className='text-[13px] font-medium text-[#999999]'>02</p>
-                            <a href="" className="text-[15px] font-semibold">Our Vision</a>
-                        </div>
-                        <div className="flex items-center gap-4">
-                            <p className='text-[13px] font-medium text-[#999999]'>03</p>
-                            <a href="" className="text-[15px] font-semibold">Products</a>
-                        </div>
-                        <div className="flex items-center gap-4">
-                            <p className='text-[13px] font-medium text-[#999999]'>04</p>
-                            <a href="" className="text-[15px] font-semibold">Products</a>
-                        </div>
-                        <div className="flex items-center gap-4">
-                            <p className='text-[13px] font-medium text-[#999999]'>05</p>
-                            <a href="" className="text-[15px] font-semibold">Team</a>
-                        </div>
-                    </div>
+                        <ActiveMenu number="01" href="/introducing" text="Introducing LUDESC" />
+                        <BorderNav />
+                        <NormalMenu number="02" href="/vision" text="Our Vision" />
+                        <NormalMenu number="03" href="/products" text="Products" />
+                        <NormalMenu number="04" href="/team" text="Team" />
+                    </NavSide>
                 </div>
             </div>
         </>

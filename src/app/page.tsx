@@ -11,7 +11,7 @@ export default function HomePage() {
             {/* <!-- Item 2 (Image) --> */}
             <div className="w-full md:w-[50%] md:order-last">
               <div>
-                <Image src="/HeroImage.jpg" alt="Hero Image" width={400} height={300} />
+                <Image src="/images/HeroImage.jpg" alt="Hero Image" width={400} height={300} />
               </div>
             </div>
             {/* <!-- Item 1 (Text) --> */}

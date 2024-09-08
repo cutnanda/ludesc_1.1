@@ -1,4 +1,4 @@
-import Header from "./components/themebuilder/01-Header";
+import NavbarMobile from "./components/themebuilder/02-Navbar";
 import './globals.css';
 
 export const metadata = {
@@ -19,8 +19,9 @@ export default function RootLayout({
           href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,500,0,0" />
       </head>
       <body className="min-h-screen p-0 m-0">
-        <div className="min-h-screen bg-[#f7f7f7] flex flex-col">
-          <Header/>
+        <div className="min-h-screen bg-[#fcfcfc] flex flex-col">
+          {/* <Header/> */}
+          <NavbarMobile/>
           <main>{children}</main>
         </div>
       </body>
