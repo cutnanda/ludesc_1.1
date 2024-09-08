@@ -23,7 +23,7 @@ export default function AboutPage() {
                         {/* <!-- Item 2 (Image) --> */}
                         <div className="w-full md:w-[50%] md:order-last flex justify-start items-center">
                             <div>
-                                <Image src="/images/HeroImage.png" alt="Hero Image" width={400} height={200} className='w-[200px] lg:w-full' />
+                                <Image src="/images/HeroImage.png" alt="Hero Image" width={400} height={400} className='w-[200px] lg:w-full' />
                             </div>
                         </div>
                         {/* <!-- Item 1 (Text) --> */}
