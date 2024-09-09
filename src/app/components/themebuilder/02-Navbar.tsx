@@ -5,8 +5,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { HiHome, HiOutlineUser, HiMenuAlt3, HiX, HiFolderOpen, HiOutlineShoppingCart } from 'react-icons/hi';
 import Button from '../elements/Button';
-import MenuDesktopAktif from './1-MenuDekstop/01-MenuAktif';
-import MenuDesktopNonAktif from './1-MenuDekstop/02-MenuNonAktif';
+import MenuDekstop from "./1-MenuDekstop/01-MenuDekstop";
 
 export default function NavbarMobile() {
     const [isClick, setIsClick] = useState(false);
@@ -27,72 +26,7 @@ export default function NavbarMobile() {
                     <Image src="/images/LogoLudesc.svg" alt="Logo" width={130} height={60} />
                 </Link>
                 <div className="w-3/5">
-                    <ul className="hidden md:flex items-center justify-center space-x-5">
-                        <MenuDesktopAktif
-                            title="Home"
-                            items={['Introduction Ludesc', 'Our Vision', 'Products', 'Achievement', 'Team']}
-                            isOpen={openMenu === 'Home'}
-                            toggleDropdown={() => toggleMenu('Home')}
-                            href="/home"
-                            className="text-[#3a3f3e]"
-                            dropdownLinks={[
-                                '/home/',
-                                '/home/vision',
-                                '/home/products',
-                                '/home/achievement',
-                                '/home/team',
-                            ]}
-                        />
-                        <MenuDesktopNonAktif
-                            title="Product"
-                            items={[' Service Offer', ' Playground', 'Products', 'Achievement', 'Team']}
-                            isOpen={openMenu === 'Products'} // Set isOpen sesuai dengan state
-                            toggleDropdown={() => toggleMenu('Products')}
-                            href="/about"
-                            className="text-[#999999]"
-                            dropdownLinks={[
-                                '/about/',
-                                '/about/vision',
-                                '/about/products',
-                                '/home/achievement',
-                                '/home/team',
-                            ]}
-                        />
-                        <MenuDesktopNonAktif
-                            title="Price"
-                            items={[]}
-                            isOpen={openMenu === 'Price'} // Set isOpen sesuai dengan state
-                            toggleDropdown={() => toggleMenu('Price')}
-                            href="/price"
-                            className="text-[#999999]"
-                            dropdownLinks={[]}
-                        />
-                        <MenuDesktopNonAktif
-                            title="Achievement"
-                            items={[]}
-                            isOpen={openMenu === 'Achievement'} // Set isOpen sesuai dengan state
-                            toggleDropdown={() => toggleMenu('Achievement')}
-                            href="/achievement"
-                            className="text-[#999999]"
-                            dropdownLinks={[]}
-                        />
-                        <MenuDesktopNonAktif
-                            title="About Ludesc"
-                            items={['About Ludesc', '  Our Mission', 'Our Vision', 'Achievement', 'Team']}
-                            isOpen={openMenu === 'About Ludesc'} // Set isOpen sesuai dengan state
-                            toggleDropdown={() => toggleMenu('About Ludesc')}
-                            href="/about"
-                            className="text-[#999999]"
-                            dropdownLinks={[
-                                '/about/',
-                                '/about/our-mission',
-                                '/about/vision',
-                                '/home/achievement',
-                                '/home/team',
-                            ]}
-                        />
-                        
-                    </ul>
+                    <MenuDekstop/>
                 </div>
                 <div className="w-1/5 flex">
                     <div className="w-1/2 flex justify-around">
@@ -106,7 +40,7 @@ export default function NavbarMobile() {
                     </div>
                 </div>
                 <button
-                    className="lg:hidden p-2 rounded focus:outline-none focus:ring-2 focus:ring-inset focus:ring-[#3f5069]"
+                    className="lg:hidden p-2 rounded "
                     onClick={toggleNavbar}
                 >
                     {isClick ? (
@@ -118,7 +52,7 @@ export default function NavbarMobile() {
             </div>
 
             {isClick && (
-                <div className="lg:hidden p-3 bg-[#f0f0f0] border-y border-[#dbdbdb]">
+                <div className="lg:hidden p-3 bg-[#f0f0f0] border-t border-[#dbdbdb] absolute w-full shadow-lg shadow-[#00000017]">
                     <Button
                         icon={<HiHome size={15} className='fill-current w-4 h-4 mr-3' />}
                         text="Dashboard"

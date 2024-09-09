@@ -2,33 +2,31 @@ import React from 'react';
 import Link from 'next/link';
 import { HiChevronDown } from 'react-icons/hi';
 
-interface MenuDesktopProps {
+interface ItemMenuProps {
     title: string;
     items: string[];
     isOpen: boolean;
     toggleDropdown: () => void;
     dropdownLinks?: string[];
     href?: string; // href sekarang opsional
-    className: string; // Kelas untuk menu aktif atau tidak aktif
 }
 
-const MenuDesktopNonAktif: React.FC<MenuDesktopProps> = ({
+const ItemMenu: React.FC<ItemMenuProps> = ({
     title,
     items,
     isOpen,
     toggleDropdown,
     dropdownLinks = [],
-    href,
-    className
+    href
 }) => {
     const renderLink = dropdownLinks.length > 0 ? (
-        <div className={`flex items-center cursor-pointer ${className}`} onClick={toggleDropdown}>
-            <p className={className}>{title}</p>
+        <div className="flex items-center cursor-pointer text-[#3a3f3e]" onClick={toggleDropdown}>
+            <p>{title}</p>
             <HiChevronDown className={`ml-2 transform ${isOpen ? 'rotate-180' : 'rotate-0'}`} />
         </div>
     ) : (
         <Link href={href || ''}>
-            <p className={className}>{title}</p>
+            <p>{title}</p>
         </Link>
     );
 
@@ -38,12 +36,12 @@ const MenuDesktopNonAktif: React.FC<MenuDesktopProps> = ({
 
             {dropdownLinks.length > 0 && (
                 <ul
-                    className={`absolute left-0 top-full mt-4 bg-white border shadow-md transition-transform duration-300 ease-in-out ${isOpen ? 'block' : 'hidden'} w-[230px]`} // Terapkan kelas lebar dropdown
+                    className={`absolute  text-[15px] left-0 top-full mt-4 bg-white border shadow-md transition-transform duration-300 ease-in-out ${isOpen ? 'block' : 'hidden'} w-[230px]`} // Terapkan kelas lebar dropdown
                 >
                     {dropdownLinks.map((link, index) => (
-                        <li key={index} className="px-4 py-2 hover:bg-gray-100 text-[#3a3f3e]"> {/* Set warna teks langsung */}
+                        <li key={index} className="px-4 py-2 hover:bg-gray-100">
                             <Link href={link}>
-                                <p>{items[index]}</p> {/* Keluarkan className */}
+                                <p>{items[index]}</p>
                             </Link>
                         </li>
                     ))}
@@ -53,4 +51,4 @@ const MenuDesktopNonAktif: React.FC<MenuDesktopProps> = ({
     );
 };
 
-export default MenuDesktopNonAktif;
+export default ItemMenu;

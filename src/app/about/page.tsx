@@ -1,10 +1,10 @@
 import Image from 'next/image';
 import React from 'react';
 import Breadcrumb from '../components/themebuilder/03-Breadcrumb';
-import NavSide from '../components/themebuilder/04-NavSide/01-NavSide';
-import ActiveMenu from '../components/themebuilder/04-NavSide/03-ActiveMenu';
-import BorderNav from '../components/themebuilder/04-NavSide/02-BorderNav';
-import NormalMenu from '../components/themebuilder/04-NavSide/04-NormalMenu';
+import NavSide from '../components/themebuilder/2-NavSide/01-NavSide';
+import ActiveMenu from '../components/themebuilder/2-NavSide/03-ActiveMenu';
+import BorderNav from '../components/themebuilder/2-NavSide/02-BorderNav';
+import NormalMenu from '../components/themebuilder/2-NavSide/04-NormalMenu';
 import { HiChevronRight } from 'react-icons/hi';
 
 export default function AboutPage() {
@@ -22,10 +22,16 @@ export default function AboutPage() {
                     <div className="md:w-4/5 w-full flex flex-col md:flex-row justify-center items-start  ">
                         {/* <!-- Item 2 (Image) --> */}
                         <div className="w-full md:w-[50%] md:order-last flex justify-start items-center">
-                            <div>
-                                <Image src="/images/HeroImage.png" alt="Hero Image" width={400} height={400} className='w-[200px] lg:w-full ' />
+                            <div className="w-[200px] sm:w-[400px]">
+                                <Image
+                                    src="/images/HeroImage.png"
+                                    alt="Hero Image"
+                                    width={700}
+                                    height={700}
+                                />
                             </div>
                         </div>
+
                         {/* <!-- Item 1 (Text) --> */}
                         <div className="w-full md:w-[50%] lg:mt-0 mt-8 ">
                             <div>
