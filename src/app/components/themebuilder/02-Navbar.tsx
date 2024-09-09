@@ -9,11 +9,7 @@ import MenuDekstop from "./1-MenuDekstop/01-MenuDekstop";
 
 export default function NavbarMobile() {
     const [isClick, setIsClick] = useState(false);
-    const [openMenu, setOpenMenu] = useState<string | null>(null);
 
-    const toggleMenu = (title: string) => {
-        setOpenMenu(openMenu === title ? null : title);
-    };
 
     const toggleNavbar = (): void => {
         setIsClick(!isClick);
