@@ -1,17 +1,18 @@
-// src/app/components/themebuilder/02-Navbar.tsx
 "use client";
 
-import React, { useState } from 'react';
-import { HiMenuAlt3, HiOutlineShoppingCart, HiX } from 'react-icons/hi';
-import MenuMobile from './3-MenuMobile/MenuMobile';
-import MenuDekstop from './1-MenuDekstop/01-MenuDekstop';
+import React, { useState } from "react";
 import Link from 'next/link';
-import Image from 'next/image'; // Jangan lupa import Image jika diperlukan
+import Image from 'next/image';
+import { HiHome, HiOutlineUser, HiMenuAlt3, HiX, HiFolderOpen, HiOutlineShoppingCart } from 'react-icons/hi';
+import Button from '../elements/Button';
+import MenuDekstop from "./1-MenuDekstop/01-MenuDekstop";
+import MenuMobile from "./3-MenuMobile/MenuMobile";
 
-export default function Navbar() {
+export default function NavbarMobile() {
     const [isClick, setIsClick] = useState(false);
 
-    const toggleNavbar = () => {
+
+    const toggleNavbar = (): void => {
         setIsClick(!isClick);
     };
 
@@ -22,7 +23,7 @@ export default function Navbar() {
                     <Image src="/images/LogoLudesc.svg" alt="Logo" width={130} height={60} />
                 </Link>
                 <div className="w-3/5">
-                    <MenuDekstop />
+                    <MenuDekstop/>
                 </div>
                 <div className="w-1/5 flex">
                     <div className="w-1/2 flex justify-around">
@@ -47,7 +48,9 @@ export default function Navbar() {
                 </button>
             </div>
 
-            {isClick && <MenuMobile />}
+            {isClick && (
+                <MenuMobile/>
+            )}
         </div>
     );
 }
