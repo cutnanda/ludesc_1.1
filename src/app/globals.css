@@ -28,6 +28,11 @@ body {
   background-size: cover;
   background-position: start;
 }
+.background-vision {
+  background-image: url('/images/DokterMission.jpg');
+  background-size: cover;
+  background-position: start;
+}
 
 
 @layer utilities {
