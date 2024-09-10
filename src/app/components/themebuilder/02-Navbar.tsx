@@ -1,17 +1,17 @@
+// src/app/components/themebuilder/02-Navbar.tsx
 "use client";
 
-import React, { useState } from "react";
+import React, { useState } from 'react';
+import { HiMenuAlt3, HiOutlineShoppingCart, HiX } from 'react-icons/hi';
+import MenuMobile from './3-MenuMobile/MenuMobile';
+import MenuDekstop from './1-MenuDekstop/01-MenuDekstop';
 import Link from 'next/link';
-import Image from 'next/image';
-import { HiHome, HiOutlineUser, HiMenuAlt3, HiX, HiFolderOpen, HiOutlineShoppingCart } from 'react-icons/hi';
-import Button from '../elements/Button';
-import MenuDekstop from "./1-MenuDekstop/01-MenuDekstop";
+import Image from 'next/image'; // Jangan lupa import Image jika diperlukan
 
-export default function NavbarMobile() {
+export default function Navbar() {
     const [isClick, setIsClick] = useState(false);
 
-
-    const toggleNavbar = (): void => {
+    const toggleNavbar = () => {
         setIsClick(!isClick);
     };
 
@@ -22,7 +22,7 @@ export default function NavbarMobile() {
                     <Image src="/images/LogoLudesc.svg" alt="Logo" width={130} height={60} />
                 </Link>
                 <div className="w-3/5">
-                    <MenuDekstop/>
+                    <MenuDekstop />
                 </div>
                 <div className="w-1/5 flex">
                     <div className="w-1/2 flex justify-around">
@@ -47,28 +47,7 @@ export default function NavbarMobile() {
                 </button>
             </div>
 
-            {isClick && (
-                <div className="lg:hidden p-3 bg-[#f0f0f0] border-t border-[#dbdbdb] absolute w-full shadow-lg shadow-[#00000017]">
-                    <Button
-                        icon={<HiHome size={15} className='fill-current w-4 h-4 mr-3' />}
-                        text="Dashboard"
-                        href="/dashboard"
-                        className="font-medium hover:bg-[#8ca7cc] hover:text-white"
-                    />
-                    <Button
-                        icon={<HiFolderOpen size={15} className='fill-current w-4 h-4 mr-3' />}
-                        text="About"
-                        href="/about"
-                        className="mt-2 font-medium hover:bg-[#8ca7cc] hover:text-white"
-                    />
-                    <Button
-                        icon={<HiOutlineUser size={15} className='fill-current w-4 h-4 mr-3' />}
-                        text="Profil Saya"
-                        href="/profil"
-                        className="mt-2 font-medium hover:bg-[#8ca7cc] hover:text-white"
-                    />
-                </div>
-            )}
+            {isClick && <MenuMobile />}
         </div>
     );
 }

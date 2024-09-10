@@ -5,7 +5,6 @@ import NavSide from '../components/themebuilder/2-NavSide/01-NavSide';
 import ActiveMenu from '../components/themebuilder/2-NavSide/03-ActiveMenu';
 import BorderNav from '../components/themebuilder/2-NavSide/02-BorderNav';
 import NormalMenu from '../components/themebuilder/2-NavSide/04-NormalMenu';
-import { HiChevronRight } from 'react-icons/hi';
 
 export default function AboutPage() {
     return (
@@ -57,15 +56,12 @@ export default function AboutPage() {
                     </div>
                     {/* <!-- NavSidebar --> */}
                     <NavSide>
-                        <div className="w-full flex justify-strat items-center  text-[#1c738e]">
-                        <p className='text-[14px] font-semibold mr-2'>Home</p>
-                        <HiChevronRight size={15} className='fill-current w-4 h-4 ' />
-                        </div>
-                        <ActiveMenu number="01" href="/introducing" text="Introducing LUDESC" />
+                        <ActiveMenu number="01" href="/about" text="Introducing LUDESC" />
                         <BorderNav />
-                        <NormalMenu number="02" href="/vision" text="Our Vision" />
-                        <NormalMenu number="03" href="/products" text="Products" />
-                        <NormalMenu number="04" href="/team" text="Team" />
+                        <NormalMenu number="02" href="/about/mission" text="Our Mission" />
+                        <NormalMenu number="03" href="/about/vision" text="Our Vision" />
+                        <NormalMenu number="03" href="/about/products" text="Products" />
+                        <NormalMenu number="04" href="/about/team" text="Team" />
                     </NavSide>
                 </div>
             </div>
