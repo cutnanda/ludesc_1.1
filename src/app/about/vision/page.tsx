@@ -4,7 +4,6 @@ import BorderNav from '@/app/components/themebuilder/2-NavSide/02-BorderNav';
 import ActiveMenu from '@/app/components/themebuilder/2-NavSide/03-ActiveMenu';
 import NormalMenu from '@/app/components/themebuilder/2-NavSide/04-NormalMenu';
 import React from 'react';
-import { HiChevronRight } from 'react-icons/hi';
 
 export default function AboutVisionPage(): JSX.Element {
     return (
