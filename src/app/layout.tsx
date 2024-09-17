@@ -1,4 +1,3 @@
-import NavbarMobile from '@/components/themebuilder/02-Navbar';
 import './globals.css';
 import { Montserrat } from 'next/font/google';
 import Navbar from '@/components/themebuilder/02-Navbar';
