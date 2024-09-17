@@ -1,10 +1,10 @@
+import Breadcrumb from '@/components/themebuilder/03-Breadcrumb';
+import NavSide from '@/components/themebuilder/2-NavSide/01-NavSide';
+import BorderNav from '@/components/themebuilder/2-NavSide/02-BorderNav';
+import ActiveMenu from '@/components/themebuilder/2-NavSide/03-ActiveMenu';
+import NormalMenu from '@/components/themebuilder/2-NavSide/04-NormalMenu';
 import Image from 'next/image';
 import React from 'react';
-import Breadcrumb from '../components/themebuilder/03-Breadcrumb';
-import NavSide from '../components/themebuilder/2-NavSide/01-NavSide';
-import ActiveMenu from '../components/themebuilder/2-NavSide/03-ActiveMenu';
-import BorderNav from '../components/themebuilder/2-NavSide/02-BorderNav';
-import NormalMenu from '../components/themebuilder/2-NavSide/04-NormalMenu';
 
 export default function AboutPage() {
     return (
@@ -20,7 +20,7 @@ export default function AboutPage() {
                     </div>
                     <div className="md:w-4/5 w-full flex flex-col md:flex-row justify-center items-start  ">
                         {/* <!-- Item 2 (Image) --> */}
-                        <div className="w-full md:w-[50%] md:order-last flex justify-start items-center">
+                        <div className="w-full md:w-[55%] md:order-last flex justify-center items-center ml-5">
                             <div className="w-[200px] sm:w-[400px]">
                                 <Image
                                     src="/images/HeroImage.png"
@@ -32,7 +32,7 @@ export default function AboutPage() {
                         </div>
 
                         {/* <!-- Item 1 (Text) --> */}
-                        <div className="w-full md:w-[50%] lg:mt-0 mt-8 ">
+                        <div className="w-full md:w-[45%] lg:mt-0 mt-8  ">
                             <div>
                                 <h1 className="text-[#1C738E] text-[30px] lg:text-[46px] font-bold mb-[-5px] ">AI-Powered</h1>
                                 <p className="text-[#1c8e72] text-[23px] lg:text-[38px] font-bold">Lung Disease Screening & Telemedicine</p>

@@ -9,10 +9,10 @@ interface NormalMenuProps {
 
 const NormalMenu: React.FC<NormalMenuProps> = ({ number, href, text }) => {
     return (
-        <div className="flex items-center gap-4">
-            <p className="text-[13px] font-medium text-[#999999]">{number}</p>
+        <div className="flex items-center gap-4 justify-center text-[#999999]">
+            <p className="text-[13px] font-medium ">{number}</p>
             <Link href={href}>
-                <p className="text-[15px] font-medium text-[#999999]">{text}</p>
+                <p className="text-[15px] font-medium mb-1  ">{text}</p>
             </Link>
         </div>
     );

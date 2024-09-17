@@ -18,7 +18,7 @@ export default function NavbarMobile() {
     return (
         <div className='sticky top-0 inset-x-0 z-20 lg:mb-7 border-b border-[#0000000c] bg-white'>
             <div className='w-[100%] lg:w-[85%] mx-auto px-4 sm:px-6 flex items-center justify-between h-20'>
-                <Link href="/dashboard">
+                <Link href="/">
                     <Image src="/images/LogoLudesc.svg" alt="Logo" width={130} height={60} />
                 </Link>
                 <div className="w-3/5">

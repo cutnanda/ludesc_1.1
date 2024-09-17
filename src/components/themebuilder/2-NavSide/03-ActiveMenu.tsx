@@ -12,7 +12,7 @@ const ActiveMenu: React.FC<ActiveMenuProps> = ({ number, href, text }) => {
         <div className="flex items-center gap-4">
             <p className="text-[13px] font-medium text-[#999999]">{number}</p>
             <Link href={href}>
-                <p className="text-[16px] font-semibold">{text}</p>
+                <p className="text-[16px] font-semibold  mb-1">{text}</p>
             </Link>
         </div>
     );
