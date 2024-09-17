@@ -20,7 +20,7 @@ export default function MenuDekstop() {
                 </DropdownMenuTrigger>
                 <DropdownMenuContent>
                     <DropdownMenuItem asChild>
-                        <Link href="/about">
+                        <Link href="/">
                             <p>Home</p>
                         </Link>
                     </DropdownMenuItem>

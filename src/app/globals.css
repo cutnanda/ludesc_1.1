@@ -28,10 +28,17 @@ body {
   background-size: cover;
   background-position: start;
 }
+
 .background-vision {
   background-image: url('/images/DokterMission.jpg');
   background-size: cover;
   background-position: start;
+}
+
+.background-achievement {
+  background-image: url('/images/achievement.jpeg');
+  background-size: cover;
+  background-position: center;
 }
 
 

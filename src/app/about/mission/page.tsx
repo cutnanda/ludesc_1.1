@@ -52,8 +52,8 @@ export default function AboutMissionPage(): JSX.Element {
                         <ActiveMenu number="02" href="/about/mission" text="Our Mission" />
                         <BorderNav />
                         <NormalMenu number="03" href="/about/vision" text="Our Vision" />
-                        <NormalMenu number="03" href="/about/products" text="Products" />
-                        <NormalMenu number="04" href="/about/team" text="Team" />
+                        <NormalMenu number="04" href="/about/products" text="Products" />
+                        <NormalMenu number="05" href="/about/team" text="Team" />
                     </NavSide>
                 </div>
             </div >

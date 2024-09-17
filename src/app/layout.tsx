@@ -1,6 +1,7 @@
 import NavbarMobile from '@/components/themebuilder/02-Navbar';
 import './globals.css';
 import { Montserrat } from 'next/font/google';
+import Navbar from '@/components/themebuilder/02-Navbar';
 
 // Menggunakan Montserrat dengan bobot dari 100 hingga 900
 const montserrat = Montserrat({
@@ -27,7 +28,7 @@ export default function RootLayout({
       </head>
       <body className="min-h-screen p-0 m-0">
         <div className="min-h-screen bg-[#fcfcfc] flex flex-col">
-          <NavbarMobile />
+          <Navbar />
           <main>{children}</main>
         </div>
       </body>

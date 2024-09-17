@@ -57,18 +57,18 @@ export default function HomePage() {
           </div>
           {/* <!-- NavSidebar --> */}
           <NavSide>
-            <ActiveMenu number="01" href="/about" text="Introducing LUDESC" />
+            <ActiveMenu number="01" href="/" text="Introducing LUDESC" />
             <BorderNav />
-            <NormalMenu number="02" href="/about/mission" text="Our Mission" />
-            <NormalMenu number="03" href="/about/vision" text="Our Vision" />
-            <NormalMenu number="03" href="/about/products" text="Products" />
-            <NormalMenu number="04" href="/about/team" text="Team" />
+            <NormalMenu number="02" href="/vision" text="Our Vision" />
+            <NormalMenu number="03" href="/products" text="Products" />
+            <NormalMenu number="04" href="/achievement" text="Achievement" />
+            <NormalMenu number="05" href="/team" text="Team" />
           </NavSide>
         </div>
       </div>
       {/* Page 2 */}
       <div className="w-full flex justify-center items-center">
-        <div className="flex flex-col md:flex-row justify-center items-start p-5 w-[95%] lg:w-[85%]">
+        <div className="flex flex-col md:flex-row justify-center items-start p-5 w-[95%] lg:w-[85%] mb-10">
           <div className="md:w-4/5 w-full flex flex-col md:flex-row justify-center items-start  ">
             {/* <!-- Item 2 (Image) --> */}
             <div className="w-full md:w-[45%]  flex justify-start items-center ">

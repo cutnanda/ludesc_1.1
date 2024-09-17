@@ -7,7 +7,7 @@ import { HiMenuAlt3, HiX, HiOutlineShoppingCart } from 'react-icons/hi';
 import MenuDekstop from "./1-MenuDekstop/01-MenuDekstop";
 import MenuMobile from "./3-MenuMobile/MenuMobile";
 
-export default function NavbarMobile() {
+export default function Navbar() {
     const [isClick, setIsClick] = useState(false);
 
 

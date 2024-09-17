@@ -10,7 +10,7 @@ export default function AboutVisionPage(): JSX.Element {
         <>
             {/* Content */}
             <div className="w-full flex justify-center items-center">
-                <div className="flex flex-col md:flex-row justify-center items-start p-5 w-[95%] lg:w-[85%]">
+                <div className="flex flex-col md:flex-row justify-center items-start p-5 w-[95%] lg:w-[85%] mb-[200px]">
                     <div className="lg:hidden mb-3">
                         <Breadcrumb
                             link={{ name: "Home", href: "/" }}
@@ -40,8 +40,8 @@ export default function AboutVisionPage(): JSX.Element {
                         <NormalMenu number="02" href="/about/mission" text="Our Mission" />
                         <ActiveMenu number="03" href="/about/vision" text="Our Vision" />
                         <BorderNav />
-                        <NormalMenu number="03" href="/about/products" text="Products" />
-                        <NormalMenu number="04" href="/about/team" text="Team" />
+                        <NormalMenu number="04" href="/about/products" text="Products" />
+                        <NormalMenu number="05" href="/about/team" text="Team" />
                     </NavSide>
                 </div>
             </div >

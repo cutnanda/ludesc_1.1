@@ -60,8 +60,8 @@ export default function AboutPage() {
                         <BorderNav />
                         <NormalMenu number="02" href="/about/mission" text="Our Mission" />
                         <NormalMenu number="03" href="/about/vision" text="Our Vision" />
-                        <NormalMenu number="03" href="/about/products" text="Products" />
-                        <NormalMenu number="04" href="/about/team" text="Team" />
+                        <NormalMenu number="04" href="/about/products" text="Products" />
+                        <NormalMenu number="05" href="/about/team" text="Team" />
                     </NavSide>
                 </div>
             </div>
