@@ -11,7 +11,7 @@ export default function AboutPage() {
         <>
             {/* <!-- Content --> */}
             <div className="w-full flex justify-center items-center">
-                <div className="flex flex-col md:flex-row justify-center items-start p-5 w-[95%] lg:w-[85%] mb-[100px]">
+                <div className="flex flex-col md:flex-row justify-center items-start p-5 w-[95%] lg:w-[90%] mb-[100px]">
                     <div className="lg:hidden mb-3">
                         <Breadcrumb
                             link={{ name: "Home", href: "/" }}

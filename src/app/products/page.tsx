@@ -10,7 +10,7 @@ export default function ProductsPage() {
         <>
             <div className="flex-1 bg-no-repeat bg-left flex items-center justify-center"
                 style={{ backgroundImage: "url('/images/ludescapp.png')", backgroundSize: '30%' }}>
-                <div className="flex flex-col md:flex-row justify-center items-start p-5 w-[95%] lg:w-[85%] mb-10">
+                <div className="flex flex-col md:flex-row justify-center items-start p-5 w-[95%] lg:w-[90%] mb-10">
                     <div className="w-4/5 flex flex-col space-y-10">
                         {/* Item 1 */}
                         <div className="flex items-start">

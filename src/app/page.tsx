@@ -12,14 +12,14 @@ export default function HomePage() {
     <>
       {/* <!-- Content --> */}
       <div className="w-full flex justify-center items-center">
-        <div className="flex flex-col md:flex-row justify-center items-start p-5 w-[95%] lg:w-[85%]">
+        <div className="flex flex-col md:flex-row justify-center items-start p-5 w-[95%] lg:w-[90%]">
           <div className="lg:hidden mb-3">
             <Breadcrumb
               link={{ name: "Home", href: "/" }}
               link2={{ name: "Introducing LUDESC" }}
             />
           </div>
-          <div className="md:w-4/5 w-full flex flex-col md:flex-row justify-center items-start  ">
+          <div className="md:w-[90%] w-full flex flex-col md:flex-row justify-center items-start  ">
             {/* <!-- Item 2 (Image) --> */}
             <div className="w-full md:w-[55%] md:order-last flex justify-center items-center ml-5">
               <div className="w-[200px] sm:w-[400px]">
@@ -56,19 +56,21 @@ export default function HomePage() {
             </div>
           </div>
           {/* <!-- NavSidebar --> */}
-          <NavSide>
+          
+          <div className="hidden md:flex w-full md:w-[20%] flex-col justify-start items-start space-y-4 mt-8 md:mt-0 ml-0 md:ml-10">
             <ActiveMenu number="01" href="/" text="Introducing LUDESC" />
             <BorderNav />
             <NormalMenu number="02" href="/vision" text="Our Vision" />
             <NormalMenu number="03" href="/products" text="Products" />
             <NormalMenu number="04" href="/achievement" text="Achievement" />
             <NormalMenu number="05" href="/team" text="Team" />
-          </NavSide>
+            
+        </div>
         </div>
       </div>
       {/* Page 2 */}
       <div className="w-full flex justify-center items-center">
-        <div className="flex flex-col md:flex-row justify-center items-start p-5 w-[95%] lg:w-[85%] mb-10">
+        <div className="flex flex-col md:flex-row justify-center items-start p-5 w-[95%] lg:w-[90%] mb-10">
           <div className="md:w-4/5 w-full flex flex-col md:flex-row justify-center items-start  ">
             {/* <!-- Item 2 (Image) --> */}
             <div className="w-full md:w-[45%]  flex justify-start items-center ">
