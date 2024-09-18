@@ -95,7 +95,7 @@ export default function HomePage() {
                   {/* Menggunakan flex display untuk membuat div sebaris */}
                   <div className="flex items-center justify-between">
                     {/* Div 1 */}
-                    <div className='text-[#828383] text-[13px] font-300'>
+                    <div className='text-[#828383] text-[15px] font-300'>
                       <span>Stethoscope </span>
                       <br />
                       <span>& Medical Service</span>
