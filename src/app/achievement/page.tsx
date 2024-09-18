@@ -19,7 +19,7 @@ export default function AchievementPage(): JSX.Element {
                         />
                     </div>
                     {/* Content */}
-                    <div className="flex lg:w-4/5 background-achievement ">
+                    <div className="flex lg:w-[4/5] background-achievement">
                         <div className="flex flex-col lg:flex-row w-full ">
                             {/* Spacer di desktop */}
                             <div className="p-[20px] lg:w-1/6"></div>

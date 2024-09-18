@@ -90,7 +90,7 @@ export default function HomePage() {
               </div>
             </div>
             {/* <!-- Item 1 (Text) --> */}
-            <div className="w-full md:w-[55%] lg:mt-0 mt-8 shadow-lg p-5 ml-5">
+            <div className="w-full md:w-[55%] lg:mt-0 mt-8 shadow-lg p-5 ml-5 bg-white">
               <div>
                 <div className="container mx-auto">
                   {/* Menggunakan flex display untuk membuat div sebaris */}
