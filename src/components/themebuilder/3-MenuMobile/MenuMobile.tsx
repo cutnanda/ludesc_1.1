@@ -32,26 +32,26 @@ export default function MenuMobile() {
                 {/* Products Menu */}
                 <AccordionItem value="products">
                     <AccordionTrigger className="mt-2 font-medium hover:bg-[#6a97d4] hover:text-white">
-                        <HiOutlineShoppingCart size={15} className='fill-current w-4 h-4 mr-3' />
+                        <HiTag size={15} className='fill-current w-4 h-4 mr-3' />
                         Products
                     </AccordionTrigger>
-                    <AccordionContent className="pl-8">
-                        <Button text="Service Offer" href="/products/service-offer" />
-                        <Button text="Playground" href="/products/playground" />
-                        <Button text="Product" href="/products/product" />
-                        <Button text="Achievement" href="/products/achievement" />
-                        <Button text="Team" href="/products/team" />
+                    <AccordionContent>
+                        <Button text="Products" href="/products" />
                     </AccordionContent>
                 </AccordionItem>
-
+                
                 {/* Price Menu */}
                 <AccordionItem value="price">
                     <AccordionTrigger className="mt-2 font-medium hover:bg-[#6a97d4] hover:text-white">
-                        <HiTag size={15} className='fill-current w-4 h-4 mr-3' />
+                        <HiOutlineShoppingCart size={15} className='fill-current w-4 h-4 mr-3' />
                         Price
                     </AccordionTrigger>
-                    <AccordionContent>
-                        <Button text="Price" href="/price" />
+                    <AccordionContent className="pl-8">
+                        <Button text="Service Offer" href="/price/service-offer" />
+                        <Button text="Playground" href="/price/playground" />
+                        <Button text="Product" href="/price/product" />
+                        <Button text="Achievement" href="/price/achievement" />
+                        <Button text="Team" href="/price/team" />
                     </AccordionContent>
                 </AccordionItem>
 

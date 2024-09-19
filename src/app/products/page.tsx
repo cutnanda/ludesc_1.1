@@ -1,4 +1,3 @@
-import Breadcrumb from '@/components/themebuilder/03-Breadcrumb';
 import NavSide from '@/components/themebuilder/2-NavSide/01-NavSide';
 import BorderNav from '@/components/themebuilder/2-NavSide/02-BorderNav';
 import ActiveMenu from '@/components/themebuilder/2-NavSide/03-ActiveMenu';
@@ -9,7 +8,10 @@ import React from 'react';
 export default function ProductsPage() {
     return (
         <>
-            <div className="flex-1 bg-no-repeat bg-left flex items-center justify-center"
+        <div className="absolute inset-0 flex justify-end items-end  pointer-events-none  z-0">
+            <span className="text-[160px] font-bold text-[#d8d8d854]">LUDESC</span>
+        </div>
+            <div className=" relative flex-1 bg-no-repeat bg-left flex items-center justify-center z-10"
                 style={{ backgroundImage: "url('/images/stetoskop.png')", backgroundSize: '30%' }}>
                 <div className="flex flex-col md:flex-row justify-center items-start p-5 w-[95%] lg:w-[90%] mb-[100px] py-10">
                     <div className="w-4/5 flex flex-col space-y-10">
@@ -23,8 +25,7 @@ export default function ProductsPage() {
                                     <h6 className="text-[#1c738e] text-lg font-semibold mt-3">Seamlessly Connect Your Digital Stethoscope to your smartphone with Bluetooth</h6>
                                     <p className="text-[#2a7b95] text-[15px]">Enhancing Your Telemedicine Experience. With digital lung auscultation and quick data access.</p>
                                     <div className='flex items-center space-x-4 mt-5'>
-                                        <button className="bg-[#1C738E] py-2.5 px-7 text-[16px] text-white font-semibold">Join
-                                            Now</button>
+                                        <button className="bg-[#1C738E] py-2.5 px-7 text-[16px] text-white font-semibold">More</button>
                                         <button
                                             className="text-[#1C738E] hover:text-[#ffffff] hover:bg-[#1C738E] py-2.5 px-3 text-[16px] font-medium flex justify-center">
                                             <span className="material-symbols-outlined mr-3 text-[44px] ">
@@ -47,7 +48,7 @@ export default function ProductsPage() {
                     </NavSide>
                 </div>
             </div>
-            <div className="flex-1 bg-no-repeat bg-left flex items-center justify-center"
+            <div className=" flex-1 bg-no-repeat bg-left flex items-center justify-center"
                 style={{ backgroundImage: "url('/images/ludescapp.png')", backgroundSize: '30%' }}>
                 <div className="flex flex-col md:flex-row justify-center items-start p-5 w-[95%] lg:w-[90%] mb-10 ">
                     <div className="w-4/5 flex flex-col space-y-10">

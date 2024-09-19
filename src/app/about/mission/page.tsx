@@ -8,8 +8,11 @@ import React from 'react';
 export default function AboutMissionPage(): JSX.Element {
     return (
         <>
+        <div className="absolute inset-0 flex justify-end items-end  pointer-events-none  z-0">
+            <span className="text-[160px] font-bold text-[#d8d8d854] ">LUDESC</span>
+        </div>
             {/* Content */}
-            <div className="w-full flex justify-center items-center">
+            <div className="relative w-full flex justify-center items-center z-10">
                 <div className="flex flex-col md:flex-row justify-center items-start p-5 w-[95%] lg:w-[90%]">
                     <div className="lg:hidden mb-3">
                         <Breadcrumb
@@ -28,7 +31,7 @@ export default function AboutMissionPage(): JSX.Element {
                                 <h1 className="text-[#1c8e72] text-[40px] lg:text-[50px] font-bold mb-[-15px]">OUR</h1>
                                 <p className="text-[#1C738E] text-[50px] lg:text-[68px] font-bold">MISSION</p>
 
-                                <ul className="list-disc list-inside text-[#1C738E] mb-4 space-y-3">
+                                <ul className="list-disc list-inside text-[#1C738E] mb-4 space-y-3 text-justify">
                                     <li>
                                         To develop and provide state-of-the-art screening tools that offer high accuracy and reliability.
                                     </li>
@@ -48,12 +51,10 @@ export default function AboutMissionPage(): JSX.Element {
                     </div>
                     {/* NavSidebar */}
                     <NavSide>
-                        <NormalMenu number="01" href="/about/" text="Introducing LUDESC" />
+                        <NormalMenu number="01" href="/about/" text="About LUDESC" />
                         <ActiveMenu number="02" href="/about/mission" text="Our Mission" />
                         <BorderNav />
                         <NormalMenu number="03" href="/about/vision" text="Our Vision" />
-                        <NormalMenu number="04" href="/about/products" text="Products" />
-                        <NormalMenu number="05" href="/about/team" text="Team" />
                     </NavSide>
                 </div>
             </div >

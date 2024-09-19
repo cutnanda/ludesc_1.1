@@ -48,48 +48,33 @@ export default function MenuDekstop() {
             </DropdownMenu>
 
             {/* Product Menu */}
+            <Link href="/products">
+                <div className="flex items-center cursor-pointer text-[#3a3f3e]">
+                    <p>Products</p>
+                </div>
+            </Link>
+
+            {/* Price Menu */}
             <DropdownMenu>
                 <DropdownMenuTrigger asChild>
                     <div className="flex items-center cursor-pointer text-[#3a3f3e]">
-                        <p>Product</p>
+                        <p>Price</p>
                         <HiChevronDown className="ml-2" />
                     </div>
                 </DropdownMenuTrigger>
                 <DropdownMenuContent>
                     <DropdownMenuItem asChild>
-                        <Link href="/products/serviceoffer">
+                        <Link href="/price">
                             Service Offer
                         </Link>
                     </DropdownMenuItem>
                     <DropdownMenuItem asChild>
-                        <Link href="/products/playground">
+                        <Link href="/price/playground">
                             Playground
-                        </Link>
-                    </DropdownMenuItem>
-                    <DropdownMenuItem asChild>
-                        <Link href="/products">
-                            Products
-                        </Link>
-                    </DropdownMenuItem>
-                    <DropdownMenuItem asChild>
-                        <Link href="/products/achievement">
-                            Achievement
-                        </Link>
-                    </DropdownMenuItem>
-                    <DropdownMenuItem asChild>
-                        <Link href="/products/team">
-                            Team
                         </Link>
                     </DropdownMenuItem>
                 </DropdownMenuContent>
             </DropdownMenu>
-
-            {/* Price Menu */}
-            <Link href="/price">
-                <div className="flex items-center cursor-pointer text-[#3a3f3e]">
-                    <p>Price</p>
-                </div>
-            </Link>
 
             {/* Achievement Menu */}
             <Link href="/achievement">
@@ -120,16 +105,6 @@ export default function MenuDekstop() {
                     <DropdownMenuItem asChild>
                         <Link href="/about/vision">
                             Our Vision
-                        </Link>
-                    </DropdownMenuItem>
-                    <DropdownMenuItem asChild>
-                        <Link href="/about/achievement">
-                            Achievement
-                        </Link>
-                    </DropdownMenuItem>
-                    <DropdownMenuItem asChild>
-                        <Link href="/about/team">
-                            Team
                         </Link>
                     </DropdownMenuItem>
                 </DropdownMenuContent>

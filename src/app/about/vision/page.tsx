@@ -8,8 +8,11 @@ import React from 'react';
 export default function AboutVisionPage(): JSX.Element {
     return (
         <>
+        <div className="absolute inset-0 flex justify-end items-end  pointer-events-none  z-0">
+            <span className="text-[160px] font-bold text-[#d8d8d854] ">LUDESC</span>
+        </div>
             {/* Content */}
-            <div className="w-full flex justify-center items-center">
+            <div className="relative w-full flex justify-center items-center z-10">
                 <div className="flex flex-col md:flex-row justify-center items-start p-5 w-[95%] lg:w-[90%] mb-[200px]">
                     <div className="lg:hidden mb-3">
                         <Breadcrumb
@@ -36,12 +39,9 @@ export default function AboutVisionPage(): JSX.Element {
                     </div>
                     {/* NavSidebar */}
                     <NavSide>
-                        <NormalMenu number="01" href="/about" text="Introducing LUDESC" />
+                        <NormalMenu number="01" href="/about" text="About LUDESC" />
                         <NormalMenu number="02" href="/about/mission" text="Our Mission" />
                         <ActiveMenu number="03" href="/about/vision" text="Our Vision" />
-                        <BorderNav />
-                        <NormalMenu number="04" href="/about/products" text="Products" />
-                        <NormalMenu number="05" href="/about/team" text="Team" />
                     </NavSide>
                 </div>
             </div >
