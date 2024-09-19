@@ -8,7 +8,7 @@ import React from 'react';
 export default function ProductsPage() {
     return (
         <>
-        <div className="absolute inset-0 flex justify-end items-end  pointer-events-none  z-0">
+        <div className="absolute inset-0 flex justify-end items-end  pointer-events-none z-0">
             <span className="text-[160px] font-bold text-[#d8d8d854]">LUDESC</span>
         </div>
             <div className=" relative flex-1 bg-no-repeat bg-left flex items-center justify-center z-10"
