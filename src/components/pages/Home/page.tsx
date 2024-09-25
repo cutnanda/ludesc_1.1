@@ -3,8 +3,9 @@
 import { useState } from 'react';
 
 import NumberTicker from '@/components/elements/NumberTicker';
+import VideoDialog from '@/components/elements/VideoDialog';
 import Image from 'next/image';
-import { use } from 'framer-motion/m';
+
 
 export default function Home(): JSX.Element {
   const [numCart, setNumCart] = useState(1);
@@ -56,7 +57,13 @@ export default function Home(): JSX.Element {
                 <span className="material-symbols-outlined mr-3 text-[44px] ">
                   play_circle
                 </span>
-                Watch Video
+                <VideoDialog
+                  text="Watch Video"
+                  className="dark:hidden block"
+                  animationStyle="from-center"
+                  videoSrc="https://www.youtube.com/embed/bOSoO5eu8WA"
+                  thumbnailAlt="Ludesc Video"
+                />
               </button>
             </div>
           </div>
@@ -136,7 +143,6 @@ export default function Home(): JSX.Element {
               </div>
             </div>
           </div>
-
         </div>
       </div>
     </>
