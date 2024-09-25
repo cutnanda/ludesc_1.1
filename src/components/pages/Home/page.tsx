@@ -1,3 +1,4 @@
+import NumberTicker from '@/components/elements/NumberTicker';
 import Image from 'next/image';
 
 export default function Home(): JSX.Element {
@@ -52,19 +53,25 @@ export default function Home(): JSX.Element {
             <div className="w-full md:w-[45%]  flex justify-start items-center ">
               <div className="flex flex-wrap justify-between mt-4">
                 <div className="w-full md:w-1/3 text-center">
-                  <h3 className="font-[600] text-4xl">30+</h3>
+                  <h3 className="font-[600] text-4xl">
+                    <NumberTicker value={30} />+
+                  </h3>
                   <p className="text-[#828383] text-[14px] font-300">
                     Clients & Medical Facilities
                   </p>
                 </div>
                 <div className="w-full md:w-1/3 text-center">
-                  <h3 className="font-[600] text-4xl">12+</h3>
+                  <h3 className="font-[600] text-4xl">
+                    <NumberTicker value={12} />+
+                  </h3>
                   <p className="text-[#828383] text-[14px] font-300">
                     Awards <br /> Winnings
                   </p>
                 </div>
                 <div className="w-full md:w-1/3 text-center">
-                  <h3 className="font-[600] text-4xl">15+</h3>
+                  <h3 className="font-[600] text-4xl">
+                    <NumberTicker value={15} />+
+                  </h3>
                   <p className="text-[#828383] text-[14px] font-300">
                     Years Experience
                   </p>
