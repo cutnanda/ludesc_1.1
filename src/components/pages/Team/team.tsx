@@ -1,7 +1,4 @@
-import NavSide from '@/components/themebuilder/2-NavSide/01-NavSide';
-import ActiveMenu from '@/components/themebuilder/2-NavSide/03-ActiveMenu';
-import NormalMenu from '@/components/themebuilder/2-NavSide/04-NormalMenu';
-import Image from 'next/image';
+import Image from '@/components/elements/Image';
 
 export default function Team(): JSX.Element {
   return (

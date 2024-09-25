@@ -1,17 +1,19 @@
-import Link from 'next/link';
+import React from 'react';
 
 interface ActiveMenuProps {
   number: string;
   href: string;
   text: string;
   isActive: boolean;
+  onClick: (event: React.MouseEvent<HTMLAnchorElement>) => void;
 }
 
 const SidebarMapMenu: React.FC<ActiveMenuProps> = ({
   number,
   href,
   text,
-  isActive
+  isActive,
+  onClick
 }) => {
   return (
     <div
@@ -26,7 +28,7 @@ const SidebarMapMenu: React.FC<ActiveMenuProps> = ({
       >
         {number}
       </p>
-      <Link href={href}>
+      <a href={href} onClick={onClick}>
         <p
           className={`text-[16px] ${
             isActive ? 'font-semibold' : 'font-medium'
@@ -34,7 +36,7 @@ const SidebarMapMenu: React.FC<ActiveMenuProps> = ({
         >
           {text}
         </p>
-      </Link>
+      </a>
     </div>
   );
 };
