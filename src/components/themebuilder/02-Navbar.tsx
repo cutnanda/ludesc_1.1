@@ -22,7 +22,7 @@ export default function Navbar() {
                     <Image src="/images/LogoLudesc.svg" alt="Logo" width={130} height={60} />
                 </Link>
                 <div className="w-3/5">
-                    <MenuDekstop/>
+                    {/* <MenuDekstop/> */}
                 </div>
                 <div className="w-1/5 flex">
                     <div className="w-1/2 flex justify-around">

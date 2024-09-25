@@ -13,12 +13,10 @@ import { sidebarMap } from '@/constant/sidebar';
 
 export default function HomePage() {
   const [activeSection, setActiveSection] = useState('home');
-  //   const [activeSection, setActiveSection] = useState('team');
 
   const handleSectionVisible = (id: string) => {
     setActiveSection(id);
   };
-  console.log(`Acctive: ${activeSection}`);
 
   const handleSidebarClick = useCallback(
     (event: React.MouseEvent<HTMLAnchorElement>, sectionId: string) => {
