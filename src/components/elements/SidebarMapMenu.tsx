@@ -7,7 +7,7 @@ interface ActiveMenuProps {
   isActive: boolean;
 }
 
-const ActiveMenu: React.FC<ActiveMenuProps> = ({
+const SidebarMapMenu: React.FC<ActiveMenuProps> = ({
   number,
   href,
   text,
@@ -39,4 +39,4 @@ const ActiveMenu: React.FC<ActiveMenuProps> = ({
   );
 };
 
-export default ActiveMenu;
+export default SidebarMapMenu;
