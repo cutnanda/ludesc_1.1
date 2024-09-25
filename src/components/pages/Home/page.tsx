@@ -1,7 +1,24 @@
+'use client';
+
+import { useState } from 'react';
+
 import NumberTicker from '@/components/elements/NumberTicker';
 import Image from 'next/image';
+import { use } from 'framer-motion/m';
 
 export default function Home(): JSX.Element {
+  const [numCart, setNumCart] = useState(1);
+
+  const handleIncreaseCart = () => {
+    setNumCart(numCart + 1);
+  };
+
+  const handleDecreaseCart = () => {
+    if (numCart >= 2) {
+      setNumCart(numCart - 1);
+    }
+  };
+
   return (
     <>
       <div className="md:w-[90%] px-32 flex flex-col md:flex-row justify-center items-start  ">
@@ -97,16 +114,17 @@ export default function Home(): JSX.Element {
 
                     {/* Div 2 */}
                     <div className="flex items-center space-x-2">
-                      <button className="bg-[#e9e9e9] text-[#3d3d3d] px-3 py-1 ">
+                      <button
+                        className="bg-[#e9e9e9] text-[#3d3d3d] px-3 py-1 "
+                        onClick={handleDecreaseCart}
+                      >
                         -
                       </button>
-                      <input
-                        type="number"
-                        defaultValue="1"
-                        min="1"
-                        className="text-center w-16 border border-gray-300 px-2 py-1 "
-                      />
-                      <button className="bg-[#e9e9e9] text-[#3d3d3d] px-3 py-1 ">
+                      <p className="px-2">{numCart}</p>
+                      <button
+                        className="bg-[#e9e9e9] text-[#3d3d3d] px-3 py-1 "
+                        onClick={handleIncreaseCart}
+                      >
                         +
                       </button>
                       <button className="bg-[#1b4b4f] text-white px-4 py-2  ml-2 text-[14px]">
@@ -119,10 +137,6 @@ export default function Home(): JSX.Element {
             </div>
           </div>
 
-          {/* <!-- NavSidebar --> */}
-          {/* <div className="hidden md:flex w-full md:w-1/5 flex-col justify-start items-start space-y-4 mt-8 md:mt-0 ml-0 md:ml-10">
-            <div></div>
-          </div> */}
         </div>
       </div>
     </>

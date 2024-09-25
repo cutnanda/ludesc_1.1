@@ -10,12 +10,6 @@ export default function OurVisionPage(): JSX.Element {
       {/* Content */}
       <div className="relative w-full flex justify-center items-center z-10">
         <div className="flex flex-col md:flex-row justify-center items-start p-5 w-[95%] lg:w-[90%] mb-[200px]">
-          <div className="lg:hidden mb-3">
-            <Breadcrumb
-              link={{ name: 'Home', href: '/' }}
-              link2={{ name: 'Our Vision' }}
-            />
-          </div>
           {/* Content */}
           <div className="flex lg:w-4/5 background-vision rounded-[30px]">
             <div className="flex flex-col lg:flex-row w-full ">
